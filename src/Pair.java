@@ -29,6 +29,29 @@ public class Pair<T, S>{
 
  */
 
-public class Pair {
+
+// T, S is variable types like int, double
+public class Pair<T, S> {
+    // first is a variable with type T
+    private T first;
+    private S second;
+
+    // firstElement is a variable with type T
+    public Pair(T firstElement, S secondElement){
+        first = firstElement;
+        second = secondElement;
+    }
+
+    public T getFirst(){
+        return first;
+    }
+
+    public S getSecond(){
+        return second;
+    }
+
+    public String toString(){
+        return "(" + first + "," + second +")" ;
+    }
 
 }
